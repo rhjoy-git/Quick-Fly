@@ -34,7 +34,6 @@ Version:	1.1
 Cart Text Limit
 ===================================*/
 document.addEventListener('DOMContentLoaded', function () {
-	console.log("I am not in mood now.1");
 	var AllcardText = document.querySelectorAll("#card-text");
 	var maxLength = 150; // Maximum number of characters to display
 	AllcardText.forEach(function (cardText) {
@@ -50,23 +49,18 @@ document.addEventListener('DOMContentLoaded', function () {
 		Holiday Slider Filter
 =================================*/
 document.addEventListener('DOMContentLoaded', function () {
-	console.log("I am not in mood now. 2");
 	const buttons = document.querySelectorAll('#middle-tab');
 	const cards = document.querySelectorAll('.country-card');
 
 	buttons.forEach(button => {
 		button.addEventListener('click', function () {
 			const continent = this.getAttribute('data-continent');
-			console.log('Selected Continent:', continent); // Debugging log
 
 			cards.forEach(card => {
-				console.log('Card Continent:', card.getAttribute('data-continent')); // Debugging log
 				if (continent === 'all' || card.getAttribute('data-continent') === continent) {
 					card.classList.remove('hidden');
-					console.log('Showing card:', card); // Debugging log
 				} else {
 					card.classList.add('hidden');
-					console.log('Hiding card:', card); // Debugging log
 				}
 			});
 		});
