@@ -136,13 +136,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			Holiday Slider JS
 		=================================*/
 		$('.holiday-slider').owlCarousel({
-			autoplay: true,
+			autoplay: false,
 			autoplayTimeout: 3000,
 			margin: 10,
 			smartSpeed: 1000,
 			fluidSpeed: true,
 			autoplayHoverPause: true,
-			loop: true,
+			loop: false,
 			nav: true,
 			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 			dots: true,
@@ -193,13 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 
-		/*=====================================
-			Counter Up JS
-		======================================*/
-		$('.counter').counterUp({
-			delay: 20,
-			time: 2000
-		});
+
 
 		/*===============================
 			Clients Slider JS
@@ -207,9 +201,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		$('.clients-slider').owlCarousel({
 			items: 5,
 			autoplay: true,
-			autoplayTimeout: 3500,
+			autoplayTimeout: 1000,
 			margin: 15,
-			smartSpeed: 400,
+			smartSpeed: 1500,
 			autoplayHoverPause: true,
 			loop: true,
 			nav: false,
@@ -225,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					items: 3,
 				},
 				1170: {
-					items: 5,
+					items: 6,
 				},
 			}
 		});
