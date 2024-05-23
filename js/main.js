@@ -95,13 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 		/*====================================
-			Search JS
-		======================================*/
-		$('.search a').on("click", function () {
-			$('.search-top').toggleClass('active');
-		});
-
-		/*====================================
 			Mobile Menu
 		======================================*/
 		$('.menu').slicknav({
@@ -356,6 +349,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	$(window).on('load', function () {
 		$('.preloader').addClass('preloader-deactivate');
 	});
-
 
 })(jQuery);
