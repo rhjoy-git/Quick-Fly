@@ -1,10 +1,24 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/   
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	.schedule .schedule-inner #col {
+		padding: 0 10px;
+	  }
+}
+/* Laptop Screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.nav-btn{
+		padding: .375rem .75rem;
+	}
+	.header .nav li a{
+		padding: 6px 12px;
+	}
+	.schedule-title h3{
+		height: 30px;
+	}
+	.schedule .schedule-inner {
+		transform: translateY(-27%);
+	}
+}
+
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 /* Header Sticky */
@@ -170,6 +184,7 @@ Version:	1.1
 	line-height: 40px;
 	border-radius: 4px;
 }
+
 .Feautes.index2 {
 	padding-top: 70px;
 }
@@ -587,6 +602,9 @@ Version:	1.1
 }
 .schedule .single-schedule{
 	margin:15px 0;
+}
+.schedule-title h3{
+	height: 60px;
 }
 .slider .single-slider{
 	position:relative;

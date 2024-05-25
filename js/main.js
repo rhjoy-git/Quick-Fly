@@ -70,9 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
 (function ($) {
 	"use strict";
 	$(document).on('ready', function () {
-
 		jQuery(window).on('scroll', function () {
-			if ($(this).scrollTop() > 200) {
+			if ($(this).scrollTop() > 150) {
 				$('#header .header-inner').addClass("sticky");
 			} else {
 				$('#header .header-inner').removeClass("sticky");
@@ -83,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			Sticky Header JS
 		======================================*/
 		jQuery(window).on('scroll', function () {
-			if ($(this).scrollTop() > 100) {
+			if ($(this).scrollTop() > 50) {
 				$('.header').addClass("sticky");
 			} else {
 				$('.header').removeClass("sticky");
