@@ -45,6 +45,22 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 });
+/*=================================
+Blog Text Limit
+===================================*/
+document.addEventListener('DOMContentLoaded', function () {
+	var AllcardText = document.querySelectorAll("#blog-text");
+	var maxLength = 300; // Maximum number of characters to display
+	AllcardText.forEach(function (cardText) {
+		var originalText = "";
+		originalText = cardText.textContent;
+		if (originalText.length > maxLength) {
+			var truncatedText = originalText.substring(0, maxLength) + '...';
+			cardText.textContent = truncatedText;
+		}
+	});
+});
+
 /*===============================
 		Holiday Slider Filter
 =================================*/
