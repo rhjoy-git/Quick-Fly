@@ -218,13 +218,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			dots: false,
 			responsive: {
 				300: {
-					items: 1,
-				},
-				480: {
 					items: 2,
 				},
-				768: {
+				480: {
 					items: 3,
+				},
+				768: {
+					items: 4,
 				},
 				1170: {
 					items: 6,

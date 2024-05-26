@@ -232,17 +232,19 @@ ol li {
   width: 34px;
   line-height: 34px;
   text-align: center;
-  border: 1px solid #ee2121;
+  border: 1px solid #1a76d1;
   text-align: center;
   padding: 0;
   border-radius: 100%;
   display: block;
-  color: #3b50d5;
-  font-size: 16px;
-}
-.header .top-link li:hover a {
   color: #1a76d1;
+  font-size: 18px;
 }
+.header .top-link li a:hover{
+  color: #fff;
+  background-color: #1a76d1;
+}
+
 .header .top-contact {
   float: left;
 }
@@ -417,7 +419,7 @@ ol li {
   transition: all 0.3s ease 0s;
   opacity: 0;
   visibility: hidden;
-  top: 62px;
+  top: 50px;
   border-left: 3px solid #2889e4;
 }
 .header .nav li:hover .dropdown {
@@ -3233,7 +3235,6 @@ ol li {
   float: left;
   margin-right: 20px;
   text-align: center;
-  width: 12%;
 }
 .news-single .head img {
   width: 80px;
