@@ -1,4 +1,4 @@
-@media (min-width: 1400px) and (max-width: 1800px) {
+@media (min-width: 1401px) and (max-width: 1800px) {
 	.schedule .single-schedule {
 	  padding: 0.625rem 0.9375rem;
 	}
@@ -13,13 +13,13 @@
 	  line-height: 1.375rem;
 	}
   }
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.schedule .schedule-inner #col {
 		padding: 0 10px;
 	  }
 }
 /* Laptop Screen */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.nav-btn{
 		padding: .375rem .75rem;
 	}
@@ -41,7 +41,7 @@
 	}
 }
 /* Tablet Screen */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 /* Header Sticky */
 .section{
 	padding:70px 0px;
@@ -398,9 +398,8 @@
 	padding: 65px 0px;
 }
 }
-
 /* Mobile Screen */
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+@media only screen and (min-width: 450px) and (max-width: 767.5px) {
 .justify-content-sm-evenly{
 	justify-content: space-evenly !important;
 }
@@ -419,9 +418,7 @@
 	padding-bottom: 20px;
 	background: #fff;
 }
-.slicknav_menu{
-	display:block;
-}
+
 .slicknav_menu {
 	display: block;
 	background: transparent;
@@ -435,14 +432,7 @@
 .slicknav_menu .slicknav_icon-bar{
 	box-shadow:none;
 }
-.slicknav_menu{
-	display:block;
-}
-.slicknav_menu {
-	display: block;
-	background: transparent;
-	padding: 0;
-}
+
 .slicknav_btn {
 	background: transparent;
 	padding: 0;

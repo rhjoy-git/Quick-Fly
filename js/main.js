@@ -112,11 +112,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		/*====================================
 			Mobile Menu
 		======================================*/
-		$('.menu').slicknav({
-			prependTo: ".mobile-nav",
-			duration: 300,
-			closeOnClick: true,
-		});
+		$(document).ready(function(){
+			$('.menu').slicknav({
+			  prependTo: ".mobile-nav",
+			  duration: 300,
+			  closeOnClick: true,
+			});
+	  
+			// Manually remove specific classes after SlickNav initialization
+			$('.slicknav_nav .sparkle').removeClass('sparkle');
+			$('.slicknav_nav .sparkle-blink').removeClass('sparkle-blink');
+		  });
 
 		/*===============================
 			Hero Slider JS
