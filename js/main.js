@@ -82,48 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
-/*===============================
-	Form Registration Validity
-=================================*/
-document.getElementById('registration-form').addEventListener('submit', function (e) {
-	let nameInput = document.getElementById('name');
-	if (!nameInput.value.trim()) {
-		e.preventDefault();
-		document.getElementById('name-error').textContent = 'Please enter your full name.';
-		nameInput.focus();
-	} else {
-		document.getElementById('name-error').textContent = '';
-	}
-
-	let phoneInput = document.getElementById('phone');
-	if (phoneInput.value.length !== 10 || !phoneInput.value.match(/^\d{10}$/)) {
-		e.preventDefault();
-		document.getElementById('phone-error').textContent = 'Please enter a valid phone number with exactly 10 digits.';
-		phoneInput.focus();
-	} else {
-		document.getElementById('phone-error').textContent = '';
-	}
-
-	let emailInput = document.getElementById('email');
-	let emailValue = emailInput.value;
-	let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	if (!emailPattern.test(emailValue)) {
-		e.preventDefault();
-		document.getElementById('email-error').textContent = 'Please enter a valid email address.';
-		emailInput.focus();
-	} else {
-		document.getElementById('email-error').textContent = '';
-	}
-
-	let passwordInput = document.getElementById('password');
-	if (passwordInput.value.length < 8) {
-		e.preventDefault();
-		document.getElementById('password-error').textContent = 'Password must be at least 8 characters long.';
-		passwordInput.focus();
-	} else {
-		document.getElementById('password-error').textContent = '';
-	}
-});
 /*=========================================*/
 (function ($) {
 	"use strict";
@@ -154,7 +112,7 @@ document.getElementById('registration-form').addEventListener('submit', function
 		/*====================================
 			Mobile Menu
 		======================================*/
-		$(document).ready(function () {
+		$(document).ready(function(){
 			$('.menu').slicknav({
 				prependTo: ".mobile-nav",
 				duration: 300,
@@ -414,3 +372,46 @@ document.getElementById('registration-form').addEventListener('submit', function
 	});
 
 })(jQuery);
+
+/*===============================
+	Form Registration Validity
+=================================*/
+document.getElementById('registration-form').addEventListener('submit', function (e) {
+	let nameInput = document.getElementById('name');
+	if (!nameInput.value.trim()) {
+		e.preventDefault();
+		document.getElementById('name-error').textContent = 'Please enter your full name.';
+		nameInput.focus();
+	} else {
+		document.getElementById('name-error').textContent = '';
+	}
+
+	let phoneInput = document.getElementById('phone');
+	if (phoneInput.value.length !== 10 || !phoneInput.value.match(/^\d{10}$/)) {
+		e.preventDefault();
+		document.getElementById('phone-error').textContent = 'Please enter a valid phone number with exactly 10 digits.';
+		phoneInput.focus();
+	} else {
+		document.getElementById('phone-error').textContent = '';
+	}
+
+	let emailInput = document.getElementById('email');
+	let emailValue = emailInput.value;
+	let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailPattern.test(emailValue)) {
+		e.preventDefault();
+		document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+		emailInput.focus();
+	} else {
+		document.getElementById('email-error').textContent = '';
+	}
+
+	let passwordInput = document.getElementById('password');
+	if (passwordInput.value.length < 8) {
+		e.preventDefault();
+		document.getElementById('password-error').textContent = 'Password must be at least 8 characters long.';
+		passwordInput.focus();
+	} else {
+		document.getElementById('password-error').textContent = '';
+	}
+});
